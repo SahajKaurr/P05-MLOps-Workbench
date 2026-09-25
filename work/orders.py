@@ -4,9 +4,8 @@ TRAFFIC_LEVELS = (1, 2, 3)
 
 
 def minutes_per_km(delivery_min, distance_km):
-    "How many minutes each kilometre took."
     if distance_km <= 0:
-        raise ValueError("distance_km must be positive")
+        raise ValueError("Distance must be positive")
     return delivery_min / distance_km
 
 
